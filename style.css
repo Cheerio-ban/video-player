@@ -251,6 +251,10 @@ select > option {
     position: relative;
     top: -25px;
   }
+  .spac {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
 
   .progress-range {
     width: 100%;
@@ -264,7 +268,7 @@ select > option {
   }
 
   .volume-range {
-    width: 50px;
+    width: 30px;
     left: 30px;
     top: -15px;
   }
