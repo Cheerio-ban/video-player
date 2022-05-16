@@ -15,7 +15,7 @@ const fullScreenBtn = document.querySelector(".fullscreen");
 
 
 // looping over videos in the folder
-const videos = ["m","aa",'ac', "e", 's',"ab", "c", "v", "d", "g", "o", 'h', 'x', "n", 'b', 'kek', "t", "a", "w", 'j', 'i', "k", "electrics"]
+const videos = ['i', 'j', "m", "aa", 'ac', "e", 's',"ab", "c", "v", "d", "g", "o", 'p', 'h', 'x', "n", 'b', 'kek', "t", "a", "w", "k", "electrics", 'q']
 
 // keep track of videos
 let videoIndex = 0;
@@ -31,7 +31,7 @@ function loadVideo(videod) {
 function nextVideo() {
     videoIndex++;
 
-    if (videoIndex > video.length - 1){
+    if (videoIndex > videos.length - 1){
         videoIndex = 0
     }
     loadVideo(videos[videoIndex]);
@@ -43,7 +43,7 @@ function prevVideo() {
     videoIndex--;
 
     if (videoIndex < 0) {
-        videoIndex = video.length -1;
+        videoIndex = videos.length -1;
     }
 
     loadVideo(videos[videoIndex]);
@@ -69,8 +69,7 @@ function togglePlay() {
     }
 }
 
-// On video End, show play button icon
-video.addEventListener('ended', nextVideo);
+
 
 
 // Progress Bar ---------------------------------- //
@@ -201,3 +200,5 @@ volumeRange.addEventListener('click', changeVolume);
 volumeIcon.addEventListener('click', toggleMute);
 speed.addEventListener('change', changeSpeed);
 fullScreenBtn.addEventListener('click', toggleFullscreen);
+// On video End, loop to the first video
+video.addEventListener('ended', nextVideo);
