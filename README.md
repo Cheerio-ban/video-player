@@ -1,0 +1,1 @@
+This is a web-based Math sprint game that tests a user's mental arithmetic ability of the math multiplication table using HTML, CSS, and Vanilla JavaScript. It also uses time events and number of incorrect answers to calculate scores. You can find the deployed version of the game here: https://mathsprint.netlify.app/
